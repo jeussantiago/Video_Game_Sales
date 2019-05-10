@@ -62,3 +62,6 @@ XGBoost was found to be the best predicting model. The model does not seem too o
 
 <img src="pictures/Image%205-9-19%20at%207.43%20PM.jpg" height="400">
 
+# Things to Consider in the Future
+
+The scope of my project was limited to the dataset here. There are features which would definitely help in predicitng whether NA sales for a particular game is going to be greater than EU games for the same game such as the population distribution and age distribution. To the this project to the next step, data such as the ones just mentioned be be obtained and factored in.
