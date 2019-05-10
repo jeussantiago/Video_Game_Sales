@@ -27,7 +27,7 @@ The variable which this project is trying to predict is whether North American s
 By Visualizing, we were able to attain insights about the lengths we can take our dataset as well as explore possible ways to improve model performance.
 
 From the histogram below, we attain information about how North Americans spend much more on games compared to Europeans. We also find out about a class imbalance in our dataset which needs to be addressed.
-<img src="pictures/Image%205-9-19%20at%201.34%20PM.jpg">
+<img src="pictures/Image%205-9-19%20at%201.34%20PM.jpg" height="300">
 
 
 These two graphs about Genre and ESRB Rating for North America and Europe allows us to see that Genre and ESRB_rating are relevant predictors because there are slight differences about the genre and ESRB Rating, in terms of region percentages, that each region tends to sway towards. 
@@ -35,7 +35,7 @@ These two graphs about Genre and ESRB Rating for North America and Europe allows
 
 
 Although these graphs are appealling, they showed the extent to which we can take our data as there was no way to compare North America's performance to Europes in terms of sales and publishers. We only knew whether North America bought more of a game than Europe, which is the target variable.
-<img src="pictures/Image%205-9-19%20at%201.52%20PM.jpg">
+<img src="pictures/Image%205-9-19%20at%201.52%20PM.jpg" width="1300">
 
 
 After doing some feature engineering where we create dummy variables and add more features, we select a subset of those features. This dataset is compared against the original with some dummy variables to see which dataset performs better. The original dataset with some dummy variables performed better which is the final dataset used for model testing. This dataset is labeled "modeling_video_game_dataset.csv".
@@ -53,11 +53,12 @@ The models that will be attempted to reach the best results are:
 ### Baseline
 
 Random Forest and XGBoost performed the best out of all with the highest f1 scores and lowest percentages of errors in terms of False Positives and False Negatives.
-> (Baseline Random Forest/ Baseline XGBoost)
+<img src="pictures/Image%205-9-19%20at%202.27%20PM.jpg" height="250">
+
 
 ### After Hyperparameter Tuning
 
 XGBoost was found to be the best predicting model. The model does not seem too overfit as teh F1 scores are around the same area. This model also performed the best in terms of the lowest amount of False Negatives, as it was worrying that there was a class imbalance in the test set. This better ratio of Predicted Negatives to Actual Negatives lead to a higher Acurracy score compared to other tuned models as well.
 
-<img src="pictures/Image%205-9-19%20at%207.43%20PM.jpg">
+<img src="pictures/Image%205-9-19%20at%207.43%20PM.jpg" height="400">
 
